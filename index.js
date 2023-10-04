@@ -101,3 +101,35 @@ const result8 = sentenceElements.reduce((acumulador, elemento)=> acumulador + " 
 
 
 //9
+const books = [
+  {
+    name: ' JS for dummies',
+    author: 'Emily A. Vander Veer',
+    price: 20,
+    category: 'code'
+  },
+  {
+    name: 'Don Quijote de la Mancha',
+    author: 'Cervantes',
+    price: 14,
+    category: 'novel'
+  },
+  {
+    name: 'Juego de tronos',
+    author: 'George R. Martin',
+    price: 32,
+    category: 'Fantasy'
+  },
+  {
+    name: 'javascript the good parts',
+    author: 'Douglas Crockford',
+    price: 40,
+    category: 'code'
+  }
+];
+const result9 = books
+    .filter(libro =>  libro.category =="code")
+    .map(libro => libro.price)
+    .reduce((a, b) => a + b)
+
+
