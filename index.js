@@ -71,7 +71,32 @@ const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const result4 = numbers2.filter(num => num %2 !== 0)
 
 //5
-
+const foodList2 =[
+  {
+    name: 'Tempeh',
+    isVeggie: true
+  },
+  {
+    name: 'Cheesbacon burguer',
+    isVeggie: false
+  },
+  {
+    name: 'Tofu burguer',
+    isVeggie: true
+  },
+  {
+    name: 'Entrecot',
+    isVeggie: false
+  }];
+const result5 = foodList2
+        .filter(comida =>  comida.isVeggie == true)
+        .map((comida, i , array) => {
+          if (i == 1){
+            return "Que rica " + comida.name + " me voy a comer!"
+         }
+          return "Que rico " + comida.name + " me voy a comer!"
+      })
+        
 //6
 
 
