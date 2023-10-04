@@ -20,11 +20,7 @@ const result2 = foodList.map((food, i , array) => {
       return paises[i] + food
 })
 
-
-
-
-
-
+const staffDescriptions = staff.map((member, i , array) => )
 
 //3
 const staff = [
@@ -97,7 +93,11 @@ const sentenceElements = [
   'javascript'
 ];
 
-const result8 = sentenceElements.reduce((acumulador, elemento)=> acumulador + " "+ elemento)
+sentenceElements.splice(2, 1, "Pepito");
+const result8 = sentenceElements.reduce((acumulador, elemento)=> {
+  return acumulador + " "+ elemento
+  });
+
 
 
 //9
