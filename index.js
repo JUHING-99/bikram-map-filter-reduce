@@ -20,7 +20,6 @@ const result2 = foodList.map((food, i , array) => {
       return paises[i] + food
 })
 
-const staffDescriptions = staff.map((member, i , array) => )
 
 //3
 const staff = [
@@ -46,9 +45,11 @@ const staff = [
   }
 ];
 
-let resultado3 = staff.map((staff) => {
-
+const result3 = staff.map((member, i , array) => {
+  return member.name + " es " + member.role + " y le gusta " + member.hobbies[0] + " y " +member.hobbies[1]
+  
 })
+
 
 // Resultado esperado
 /*
