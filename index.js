@@ -99,6 +99,30 @@ const result5 = foodList2
         
 //6
 
+const inventory = [
+  {
+    name: 'Mobile phone',
+    price: 199
+  },
+  {
+    name: 'TV Samsung',
+    price: 459
+  },
+  {
+    name: 'Viaje a Cancún',
+    price: 600
+  },
+  {
+    name: 'Mascarilla',
+    price: 1
+  }
+];
+
+const result6 = inventory
+            .filter(item =>  item.price >300)
+            .map((item, i , array) => {
+              return item.name
+          })
 
 
 //7
